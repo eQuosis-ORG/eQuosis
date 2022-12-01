@@ -1,0 +1,18 @@
+<svg width="339" height="213" viewBox="0 0 339 213" fill="none" xmlns="http://www.w3.org/2000/svg">
+<rect x="0.5" y="0.5" width="338" height="212" rx="29.5" fill="#DCDCDC"/>
+<path d="M0 30C0 13.4315 13.4315 0 30 0H309C325.569 0 339 13.4315 339 30V45H0V30Z" fill="url(#paint0_linear_18_3)"/>
+<circle cx="30" cy="23" r="10.5" fill="#FF504F" stroke="#F65760"/>
+<circle cx="64" cy="23" r="10.5" fill="#FFBC00" stroke="#F2AF2C"/>
+<circle cx="98" cy="23" r="10.5" fill="#00CC1C" stroke="#4CBA4F"/>
+<path d="M157.073 130.016V121.266L192.073 105.854V115.922L168.11 125.542L168.433 125.02V126.263L168.11 125.741L192.073 135.361V145.428L157.073 130.016ZM224.761 92.7045L208.355 153.656H199.232L215.639 92.7045H224.761ZM266.927 130.016L231.927 145.428V135.361L255.89 125.741L255.567 126.263V125.02L255.89 125.542L231.927 115.922V105.854L266.927 121.266V130.016Z" fill="black"/>
+<line x1="21.5" y1="69.5" x2="165.584" y2="69.5" stroke="black" stroke-width="5" stroke-linecap="round"/>
+<line x1="21.5207" y1="94.5" x2="125.594" y2="94.5" stroke="black" stroke-width="5" stroke-linecap="round"/>
+<line x1="21.585" y1="118" x2="104.56" y2="118" stroke="black" stroke-width="5" stroke-linecap="round"/>
+<rect x="0.5" y="0.5" width="338" height="212" rx="29.5" stroke="black"/>
+<defs>
+<linearGradient id="paint0_linear_18_3" x1="91.5" y1="-30" x2="169.5" y2="45" gradientUnits="userSpaceOnUse">
+<stop stop-color="#B6D3FE"/>
+<stop offset="1" stop-color="#B3D2FF"/>
+</linearGradient>
+</defs>
+</svg>
