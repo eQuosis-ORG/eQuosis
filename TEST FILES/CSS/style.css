@@ -1,0 +1,19 @@
+.nav-list {
+  position: absolute;
+  width: 328px;
+  height: 380px;
+  left: calc(50% - 328px / 2);
+  top: 64px;
+
+  background: rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(5px);
+  /* Note: backdrop-filter has minimal browser support */
+
+  border-radius: 20px;
+  opacity: 1;
+}
+
+#myCardContainer {
+  background-color: black;
+  border-radius: 20px;
+}
