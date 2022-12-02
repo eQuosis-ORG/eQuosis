@@ -8,9 +8,18 @@
     <link rel="stylesheet" href="CSS/style.css" />
     <script src="JS/main.js" defer></script>
     <link rel="icon" href="SVG/Title - Logo.svg" type="image/svg" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
   </head>
   <body>
     <nav class="navbar" id="top-nav">
+      <div class="hamburger">
+        <img src="SVG/Ham Burger - Closed.svg" id="closed" class="nav-close" />
+        <img
+          src="SVG/Ham Burger - Opened.svg"
+          id="opened"
+          class="nav-open hide"
+        />
+      </div>
       <ul class="nav-list" id="nav-list">
         <h1>eQuosis</h1>
         <li><a>Home</a></li>
@@ -427,5 +436,100 @@
         now<span style="color: red; margin: 10px">HIRING</span>
       </h2>
     </section>
+    <section class="about" id="about">
+      <h1 id="about-h1-1" data-aos="zoom-in-up">
+        We
+        <span
+          data-aos="fade-in-right"
+          data-aos-offset="300"
+          data-aos-easing="ease-in-sine"
+          style="color: #e24f4f"
+          >ARE</span
+        >
+      </h1>
+      <h1
+        id="about-title"
+        data-aos="fade-in-up"
+        data-aos-offset="350"
+        data-aos-easing="ease-in-sine"
+      >
+        eQuosis
+      </h1>
+      <h2
+        data-aos="fade-right"
+        data-aos-offset="300"
+        data-aos-easing="ease-in-sine"
+      >
+        Looking forward into:
+      </h2>
+      <div
+        class="container"
+        data-aos="fade-right"
+        data-aos-offset="400"
+        data-aos-easing="ease-in-sine"
+      >
+        <h1 id="web-dev" style="color: #ffffff">Web Development</h1>
+        <h2 style="color: #ffffff">
+          Looking for coders who know the following languages which are
+          necessary for web development -
+          <p>&#x2022; HTML/CSS/JAVASCRIPT</p>
+          <p>&#x2022; REACT(optional)</p>
+          <p>&#x2022; NODE</p>
+        </h2>
+        <img src="PNG/Web Development.png" />
+        <button><h3>LEARN MORE</h3></button>
+      </div>
+      <div class="container2" data-aos="fade-up">
+        <h1 id="game-dev" style="color: #ffffff">Game Development</h1>
+        <h2 style="color: #ffffff">
+          Looking for coders who know the following languages which are
+          necessary for game developing -
+          <p>&#x2022; C++</p>
+          <p>&#x2022; Python</p>
+          <p>&#x2022; Lua(optional)</p>
+        </h2>
+        <img src="PNG/Game Development.png" />
+        <button><h3>LEARN MORE</h3></button>
+      </div>
+      <div
+        class="container3"
+        data-aos="fade-left"
+        data-aos-offset="400"
+        data-aos-easing="ease-in-sine"
+      >
+        <h1 id="game-dev" style="color: #ffffff">Game Development</h1>
+        <h2 style="color: #ffffff">
+          Looking for Designers who can do one of the follow things -
+          <p>&#x2022; Web Designing</p>
+          <p>&#x2022; Graphic Designing</p>
+        </h2>
+        <img src="PNG/Designing.png" />
+        <svg
+          width="40"
+          height="21"
+          viewBox="0 0 40 21"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M39 1L20 20L1 1"
+            stroke="white"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          />
+        </svg>
+      </div>
+    </section>
+
+    <!-- TRIGGER ANIMATE ON SCROLL -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+
+    <!-- ANIMATE ON SCROLL -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/ScrollTrigger.min.js"></script>
   </body>
 </html>
