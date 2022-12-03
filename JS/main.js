@@ -15,9 +15,12 @@ const container = document.querySelector(".container3");
 
 downarrow.addEventListener("click", () => {
   container.classList.toggle("animate-height-con");
+  container.classList.toggle("container3_normal");
   downarrow.classList.toggle("drop-down-turn");
   designh2.classList.toggle("h2-text-animate");
   designh2.classList.toggle("content-design-change");
+  downarrow.classList.toggle("dropdown-highlight");
+  downarrow.classList.toggle("drop-down_normal");
 });
 
 gsap.from("#title", {
