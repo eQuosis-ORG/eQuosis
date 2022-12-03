@@ -9,6 +9,17 @@ hamburger.addEventListener("click", () => {
   navlist.classList.toggle("nav-toggle");
 });
 
+const designh2 = document.getElementById("design_h2");
+const downarrow = document.getElementById("drop-down");
+const container = document.querySelector(".container3");
+
+downarrow.addEventListener("click", () => {
+  container.classList.toggle("animate-height-con");
+  downarrow.classList.toggle("drop-down-turn");
+  designh2.classList.toggle("h2-text-animate");
+  designh2.classList.toggle("content-design-change");
+});
+
 gsap.from("#title", {
   scrollTrigger: {
     scrub: true,
