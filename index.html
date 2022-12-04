@@ -530,6 +530,131 @@
         </svg>
       </div>
     </section>
+    <section class="projects" id="projects">
+      <h1>CURRENT PROJECTS</h1>
+      <h2>Click to view info</h2>
+      <h3>MORE COMING UP SOON!</h3>
+      <div id="information" class="opacity-0">
+        <div class="right-side">
+          <img src="SVG/Projects/Full screen/CONTRIBUTE.png" />
+          <div class="equosis-space">
+            <h1>OUR MAIN WEBSITE</h1>
+            <img src="SVG/Projects/Full screen/equosis.png" />
+            <img src="SVG/Projects/Full screen/equosis h1.png" />
+          </div>
+        </div>
+        <div class="left-side">
+          <div class="equosis-tab tab">
+            <img src="SVG/Projects/Full screen/equosis title.svg" alt="" />
+          </div>
+          <div class="equosis-tab tab"></div>
+        </div>
+        <svg
+          width="29"
+          height="29"
+          viewBox="0 0 29 29"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+          id="close-btn"
+        >
+          <circle
+            cx="14.5"
+            cy="14.5"
+            r="13.5"
+            fill="url(#paint0_linear_157_33)"
+            stroke="#F56D7A"
+            stroke-width="2"
+          />
+          <defs>
+            <linearGradient
+              id="paint0_linear_157_33"
+              x1="-4.35"
+              y1="-13.775"
+              x2="34.4375"
+              y2="39.5125"
+              gradientUnits="userSpaceOnUse"
+            >
+              <stop stop-color="#FE5350" />
+              <stop offset="1" stop-color="#FF504F" />
+            </linearGradient>
+          </defs>
+        </svg>
+        <svg
+          width="29"
+          height="29"
+          viewBox="0 0 29 29"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+          id="minimize-btn"
+        >
+          <circle
+            cx="14.5"
+            cy="14.5"
+            r="13.5"
+            fill="url(#paint0_linear_157_31)"
+            stroke="#F1B572"
+            stroke-width="2"
+          />
+          <defs>
+            <linearGradient
+              id="paint0_linear_157_31"
+              x1="3.625"
+              y1="-5.8"
+              x2="34.4375"
+              y2="35.8875"
+              gradientUnits="userSpaceOnUse"
+            >
+              <stop stop-color="#FFBD00" />
+              <stop offset="1" stop-color="#FFBC00" />
+            </linearGradient>
+          </defs>
+        </svg>
+        <svg
+          width="29"
+          height="29"
+          viewBox="0 0 29 29"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+          id="maximize-btn"
+        >
+          <circle
+            cx="14.5"
+            cy="14.5"
+            r="13.5"
+            fill="url(#paint0_linear_157_32)"
+            stroke="#9EC29C"
+            stroke-width="2"
+          />
+          <defs>
+            <linearGradient
+              id="paint0_linear_157_32"
+              x1="3.625"
+              y1="-5.8"
+              x2="34.4375"
+              y2="35.8875"
+              gradientUnits="userSpaceOnUse"
+            >
+              <stop stop-color="#00CE1B" />
+              <stop offset="1" stop-color="#00CD1D" />
+            </linearGradient>
+          </defs>
+        </svg>
+      </div>
+      <img class="main-website" id="tile" src="SVG/Projects/Main Website.svg" />
+    </section>
+    <section class="contact">
+      <form onsubmit="sendEmail(); reset(); return false">
+        <input type="text" id="name" placeholder="NAME" required />
+        <input type="email" id="email" placeholder="EMAIL" required />
+        <textarea
+          id="message"
+          cols="30"
+          rows="10"
+          placeholder="QUERY"
+        ></textarea>
+        <button type="submit">Send</button>
+      </form>
+    </section>
 
     <!-- TRIGGER ANIMATE ON SCROLL -->
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
@@ -540,5 +665,6 @@
     <!-- ANIMATE ON SCROLL -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/gsap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/ScrollTrigger.min.js"></script>
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
   </body>
 </html>
