@@ -20,7 +20,7 @@
 .navbar {
   height: 54px;
 
-  position: relative;
+  position: sticky;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -102,6 +102,7 @@
   flex-grow: 0;
 }
 .nav-list li a {
+  text-decoration: none;
   position: absolute;
   width: 76px;
   height: 24px;
@@ -551,7 +552,6 @@
 #game-dev,
 #design-dev {
   position: absolute;
-  width: 285px;
   height: 36px;
   left: calc(50% - 285px / 2 - 0.5px);
   top: calc(50% - 36px / 2 + 18.5px);
@@ -787,9 +787,9 @@
   }
 }
 
-.opacity-0 {
+.scale-0 {
   cursor: auto;
-  animation: scale-animate 2s 1 cubic-bezier(0, 2.22, 0.26, -0.88) forwards;
+  animation: scale-animate 2s 1 cubic-bezier(0.81, -0.13, 0.43, 0.97) forwards;
 }
 
 @keyframes scale-animate {
@@ -825,7 +825,7 @@
   top: calc(50% - 569px / 2);
 
   background: #000000;
-  opacity: 0.3;
+  opacity: 0.5;
   border-radius: 50px 0px 0px 50px;
 }
 #close-btn {
@@ -877,23 +877,57 @@
   position: relative;
   top: 116px;
   margin: 10px;
-
-  background: rgba(171, 171, 171, 0.5);
-  border-radius: 10px;
   overflow-y: hidden;
   cursor: pointer;
 }
-.tab img {
+.tab-highlight {
+  width: 309px;
+  height: 45px;
+  left: 30px;
+  position: relative;
+  top: 116px;
+  margin: 10px;
+  overflow-y: hidden;
+  cursor: pointer;
+  background: rgba(171, 171, 171, 0.5);
+  border-radius: 10px;
+  animation: tab-highlight-change 1s cubic-bezier(0, 0.59, 0.88, 0.31);
+}
+
+@keyframes tab-highlight-change {
+  0% {
+    width: 309px;
+  }
+  50% {
+    width: 320px;
+  }
+  100% {
+    width: 309px;
+  }
+}
+
+.tab h1 {
   position: absolute;
   width: 97px;
   height: 30px;
   left: 21px;
   top: 8px;
+
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 25px;
+  line-height: 30px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+
+  color: #000000;
+  stroke: 2px solid #000000;
 }
 
 .equosis-space h1 {
   position: absolute;
-  width: 350px;
   height: 42px;
   left: 42px;
   top: 85px;
@@ -926,6 +960,47 @@
   width: 266px;
   left: calc(50% - 266px / 2 - 128px);
   top: calc(50% - 148px / 2 + 0.5px);
+}
+
+.opacity-0 {
+  opacity: 0;
+  transition: all 0.3s ease;
+}
+
+.game-space h1 {
+  position: absolute;
+  width: 370px;
+  height: 42px;
+  left: 43px;
+  top: 87px;
+
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 900;
+  font-size: 35px;
+  line-height: 42px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+
+  color: #ffffff;
+}
+.game-space h2 {
+  position: absolute;
+  width: 266px;
+  height: 148px;
+  left: calc(50% - 266px / 2 - 128px);
+  top: calc(50% - 148px / 2 + 0.5px);
+
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 35px;
+  line-height: 42px;
+  display: flex;
+  align-items: center;
+
+  color: #ffffff;
 }
 
 /* CONTACT */
@@ -1023,6 +1098,7 @@
   }
 
   .nav-list li {
+    list-style: none;
     display: flex;
     flex-direction: column;
     justify-content: center;
