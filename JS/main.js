@@ -27,7 +27,7 @@ const closebtn = document.querySelector("#close-btn");
 const informationpan = document.getElementById("information");
 
 closebtn.addEventListener("click", () => {
-  informationpan.classList.toggle("opacity-0");
+  informationpan.classList.toggle("scale-0");
   informationpan.classList.toggle("inform-animate");
   tile.classList.toggle("tile-animate-none");
 });
@@ -36,7 +36,7 @@ const equosistab = document.querySelector(".main-website");
 const tile = document.getElementById("tile");
 
 equosistab.addEventListener("click", () => {
-  informationpan.classList.toggle("opacity-0");
+  informationpan.classList.toggle("scale-0");
   informationpan.classList.toggle("inform-animate");
   tile.classList.toggle("tile-animate-none");
 });
@@ -63,3 +63,38 @@ function sendEmail() {
       document.getElementById("message").value,
   }).then((message) => alert("Message sent"));
 }
+
+var elements = document.getElementsByClassName("child");
+for (var i = 0; i < elements.length; i++) {
+  elements[i].onclick = function () {
+    // remove class from sibling
+
+    var el = elements[0];
+    while (el) {
+      if (el.tagName === "DIV") {
+        //remove class
+        el.classList.remove("tab-highlight");
+      }
+      // pass to the new sibling
+      el = el.nextSibling;
+    }
+
+    this.classList.add("tab-highlight");
+  };
+}
+
+const tab1 = document.getElementById("tab1");
+const tab2 = document.getElementById("tab2");
+const tab3 = document.getElementById("tab3");
+const rightside = document.getElementById("right-side");
+const equosisspace = document.getElementById("equosis-space");
+const gamespace = document.getElementById("game-space");
+
+tab1.addEventListener("click", () => {
+  equosisspace.classList.remove("opacity-0");
+  gamespace.classList.add("opacity-0");
+});
+tab2.addEventListener("click", () => {
+  equosisspace.classList.add("opacity-0");
+  gamespace.classList.remove("opacity-0");
+});
