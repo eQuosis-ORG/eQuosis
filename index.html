@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>eQuosis</title>
     <link rel="stylesheet" href="CSS/style.css" />
+    <link rel="stylesheet" href="CSS/Full-scrn-maxed.css" />
     <script src="JS/main.js" defer></script>
     <link rel="icon" href="SVG/Title - Logo.svg" type="image/svg" />
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
@@ -23,8 +24,8 @@
       <ul class="nav-list" id="nav-list">
         <h1>eQuosis</h1>
         <li><a>Home</a></li>
-        <li><a>About</a></li>
-        <li><a>Projects</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#projects">Projects</a></li>
         <li><a>Contact</a></li>
       </ul>
     </nav>
@@ -534,20 +535,26 @@
       <h1>CURRENT PROJECTS</h1>
       <h2>Click to view info</h2>
       <h3>MORE COMING UP SOON!</h3>
-      <div id="information" class="opacity-0">
-        <div class="right-side">
+      <div id="information" class="scale-0">
+        <div class="right-side" id="right-side">
           <img src="SVG/Projects/Full screen/CONTRIBUTE.png" />
-          <div class="equosis-space">
+          <div class="equosis-space opacity-0" id="equosis-space">
             <h1>OUR MAIN WEBSITE</h1>
             <img src="SVG/Projects/Full screen/equosis.png" />
             <img src="SVG/Projects/Full screen/equosis h1.png" />
           </div>
-        </div>
-        <div class="left-side">
-          <div class="equosis-tab tab">
-            <img src="SVG/Projects/Full screen/equosis title.svg" alt="" />
+          <div class="game-space opacity-0" id="game-space">
+            <h1>NO GAMES TILL NOW</h1>
+            <h2>CONTRIBUTE IN MAKING GAMES!</h2>
           </div>
-          <div class="equosis-tab tab"></div>
+        </div>
+        <div class="left-side parent">
+          <div class="equosis-tab tab tab1 child" id="tab1">
+            <h1>eQuosis</h1>
+          </div>
+          <div class="game-tab tab tab2 child" id="tab2">
+            <h1>Games</h1>
+          </div>
         </div>
         <svg
           width="29"
