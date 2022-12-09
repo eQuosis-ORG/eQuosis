@@ -17,3 +17,300 @@
   background-color: black;
   border-radius: 20px;
 }
+
+/* ABOUT */
+.projects {
+  height: 713.6px;
+
+  padding-top: 50px;
+
+  background: #111111;
+}
+.projects h1 {
+  position: relative;
+  width: 480px;
+  height: 56px;
+  left: calc(50% - 480px / 2);
+  top: 53px;
+
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 800;
+  font-size: 48px;
+  line-height: 56px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+
+  background: linear-gradient(
+    90.81deg,
+    #494949 -25.53%,
+    rgba(255, 255, 255, 0) 119.87%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+}
+.projects h2 {
+  position: relative;
+  top: 170px;
+  font-family: "Raleway";
+  font-weight: 100;
+  font-style: italic;
+  font-size: 15px;
+  color: #fff;
+}
+.projects h3 {
+  position: relative;
+  width: 366px;
+  height: 35px;
+  left: calc(50% - 366px / 2);
+  top: calc(50% - 35px / 2 - 47.3px);
+
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 30px;
+  line-height: 35px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+
+  color: #ffffff;
+}
+.main-website {
+  position: relative;
+  width: 243px;
+  height: 276px;
+  left: 96px;
+  top: 161px;
+
+  cursor: pointer;
+  animation: tile-highlight 1s 1s infinite ease;
+}
+
+@keyframes tile-highlight {
+  0% {
+    scale: 1;
+  }
+  50% {
+    scale: 1.05;
+  }
+  100% {
+    scale: 1;
+  }
+}
+.tile-animate-none {
+  animation: none !important;
+}
+
+#information {
+  position: fixed;
+  right: 78px;
+  top: calc(50% - 569px / 2 - 0.3px);
+
+  border: 4px solid rgba(83, 83, 83, 0.5);
+  backdrop-filter: blur(15px);
+  /* Note: backdrop-filter has minimal browser support */
+
+  border-radius: 50px;
+  overflow-y: hidden;
+}
+
+.inform-animate {
+  animation: information-animate 1.2s cubic-bezier(0, 1.55, 0.88, 0.18) forwards;
+}
+
+@keyframes information-animate {
+  0% {
+    height: 0;
+    width: 0;
+  }
+  100% {
+    width: 979px;
+    height: 569px;
+  }
+}
+
+.opacity-0 {
+  cursor: auto;
+  animation: scale-animate 2s 1 cubic-bezier(0.81, -0.13, 0.43, 0.97) forwards;
+}
+
+@keyframes scale-animate {
+  0% {
+    width: 979px;
+    height: 569px;
+  }
+  100% {
+    height: 0;
+    width: 0;
+    opacity: 0;
+  }
+}
+
+.right-side {
+  position: absolute;
+  width: 608px;
+  height: 569px;
+  right: 0px;
+  top: calc(50% - 569px / 2);
+
+  background: rgba(30, 30, 30, 0.6);
+  backdrop-filter: blur(5px);
+  /* Note: backdrop-filter has minimal browser support */
+
+  border-radius: 0px 50px 50px 0px;
+}
+.left-side {
+  position: absolute;
+  width: 371px;
+  height: 569px;
+  right: 608px;
+  top: calc(50% - 569px / 2);
+
+  background: #000000;
+  opacity: 0.3;
+  border-radius: 50px 0px 0px 50px;
+}
+#close-btn {
+  position: absolute;
+  width: 29px;
+  height: 29px;
+  left: 55px;
+  top: 48px;
+  cursor: pointer;
+}
+#minimize-btn {
+  position: absolute;
+  width: 29px;
+  height: 29px;
+  left: 106px;
+  top: 48px;
+  cursor: pointer;
+}
+#maximize-btn {
+  position: absolute;
+  width: 29px;
+  height: 29px;
+  left: 157px;
+  top: 48px;
+}
+
+.right-side img:nth-child(1) {
+  position: absolute;
+  width: 173px;
+  height: 44px;
+  left: calc(50% - 173px / 2 - 194.5px);
+  top: calc(50% - 44px / 2 + 238.5px);
+
+  background: linear-gradient(94.2deg, #53bbec 7.54%, #a5c4ff 96.5%);
+  border-radius: 20px;
+
+  cursor: pointer;
+  transition: 0.4s ease;
+}
+
+.right-side img:nth-child(1):hover {
+  scale: 1.2;
+}
+
+.tab {
+  width: 309px;
+  height: 45px;
+  left: 30px;
+  position: relative;
+  top: 116px;
+  margin: 10px;
+  overflow-y: hidden;
+  cursor: pointer;
+}
+.tab-highlight {
+  width: 309px;
+  height: 45px;
+  left: 30px;
+  position: relative;
+  top: 116px;
+  margin: 10px;
+  overflow-y: hidden;
+  cursor: pointer;
+  background: rgba(171, 171, 171, 0.5);
+  border-radius: 10px;
+  animation: 1s 0.5s;
+}
+.animate-tab {
+  animation: animate-tab 0.05s ease;
+}
+
+@keyframes tab-highlight-change {
+  0% {
+    width: 45px;
+  }
+  100% {
+    height: 101px;
+  }
+}
+
+.tab h1 {
+  position: absolute;
+  width: 97px;
+  height: 30px;
+  left: 21px;
+  top: 8px;
+
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 25px;
+  line-height: 30px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+
+  color: #000000;
+  stroke: 2px solid #000000;
+}
+
+.equosis-space h1 {
+  position: absolute;
+  height: 42px;
+  left: 42px;
+  top: 85px;
+
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 900;
+  font-size: 35px;
+  line-height: 42px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+
+  color: #ffffff;
+}
+
+.equosis-space img:nth-child(2) {
+  position: absolute;
+  width: 243px;
+  height: 276px;
+  right: 45px;
+  top: calc(50% - 276px / 2 + 0.5px);
+
+  background: rgba(40, 40, 40, 0.5);
+  border-radius: 40px;
+}
+
+.equosis-space img:nth-child(3) {
+  position: absolute;
+  width: 266px;
+  left: calc(50% - 266px / 2 - 128px);
+  top: calc(50% - 148px / 2 + 0.5px);
+}
+
+/* CONTACT */
+.contact {
+  height: 1095px;
+
+  background: #111111;
+}
