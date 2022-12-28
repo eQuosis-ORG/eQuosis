@@ -32,37 +32,23 @@ closebtn.addEventListener("click", () => {
   tile.classList.toggle("tile-animate-none");
 });
 
-const equosistab = document.querySelector(".main-website");
-const tile = document.getElementById("tile");
+let tile = document.querySelectorAll("#tile");
 
-equosistab.addEventListener("click", () => {
+function tilemax() {
   informationpan.classList.toggle("scale-0");
   informationpan.classList.toggle("inform-animate");
-  tile.classList.toggle("tile-animate-none");
-});
+}
+// tile.addEventListener("click", () => {
+//   informationpan.classList.toggle("scale-0");
+//   informationpan.classList.toggle("inform-animate");
+// });
 
 gsap.from("#title", {
   scrollTrigger: {
     scrub: true,
   },
-  y: 500,
+  y: 800,
 });
-
-function sendEmail() {
-  Email.send({
-    secureToken: "268ea5ea-c4b4-495e-b6aa-85d7246978ae",
-    To: "equosiscoders@gmail.com",
-    From: document.getElementById("email").value,
-    Subject: "New Email from Contact Form",
-    Body:
-      "Name: " +
-      document.getElementById("name").value +
-      "<br> Email: " +
-      document.getElementById("email").value +
-      "<br> Query: " +
-      document.getElementById("message").value,
-  }).then((message) => alert("Message sent"));
-}
 
 var elements = document.getElementsByClassName("child");
 for (var i = 0; i < elements.length; i++) {
@@ -72,10 +58,8 @@ for (var i = 0; i < elements.length; i++) {
     var el = elements[0];
     while (el) {
       if (el.tagName === "DIV") {
-        //remove class
         el.classList.remove("tab-highlight");
       }
-      // pass to the new sibling
       el = el.nextSibling;
     }
 
@@ -98,3 +82,20 @@ tab2.addEventListener("click", () => {
   equosisspace.classList.add("opacity-0");
   gamespace.classList.remove("opacity-0");
 });
+
+gsap.registerPlugin(Flip);
+
+// const links = document.querySelectorAll(".tab h1");
+// const activetab = document.querySelector("tab-highlight");
+
+// links.forEach((link) => {
+//   link.addEventListener("click", (e) => {
+//     gsap.to(links, { color: "#00000" });
+
+//     if (document.activeElement === e.target) {
+//       gsap.to(link, { color: "#000000" });
+//     }
+
+//     link.appendChild(activetab)
+//   });
+// });

@@ -6,10 +6,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>eQuosis</title>
     <link rel="stylesheet" href="CSS/style.css" />
-    <link rel="stylesheet" href="CSS/Full-scrn-maxed.css" />
     <script src="JS/main.js" defer></script>
     <link rel="icon" href="SVG/Title - Logo.svg" type="image/svg" />
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+    />
   </head>
   <body>
     <nav class="navbar" id="top-nav">
@@ -23,13 +27,19 @@
       </div>
       <ul class="nav-list" id="nav-list">
         <h1>eQuosis</h1>
-        <li><a>Home</a></li>
+        <li><a href="#home">Home</a></li>
         <li><a href="#about">About</a></li>
         <li><a href="#projects">Projects</a></li>
         <li><a>Contact</a></li>
       </ul>
     </nav>
     <section class="home">
+      <div class="construct-warn">
+        <h1>
+          THIS WEBSITE IS STILL HIGHLY UNDER BETA SO EXPECT BUGS AND GLITCHES
+        </h1>
+        <i class="material-icons">close</i>
+      </div>
       <img id="curve-1" src="PNG/Curve 1.png" />
       <svg
         width="353"
@@ -534,10 +544,13 @@
     <section class="projects" id="projects">
       <h1>CURRENT PROJECTS</h1>
       <h2>Click to view info</h2>
-      <h3>MORE COMING UP SOON!</h3>
+      <!-- <h3>MORE COMING UP SOON!</h3> -->
       <div id="information" class="scale-0">
         <div class="right-side" id="right-side">
-          <img src="SVG/Projects/Full screen/CONTRIBUTE.png" />
+          <img
+            src="SVG/Projects/Full screen/CONTRIBUTE.png"
+            href="https://github.com/eQuosis-ORG"
+          />
           <div class="equosis-space opacity-0" id="equosis-space">
             <h1>OUR MAIN WEBSITE</h1>
             <img src="SVG/Projects/Full screen/equosis.png" />
@@ -647,10 +660,33 @@
           </defs>
         </svg>
       </div>
-      <img class="main-website" id="tile" src="SVG/Projects/Main Website.svg" />
+      <img
+        class="main-website tile"
+        id="tile"
+        onclick="tilemax()"
+        src="SVG/Projects/Main Website.svg"
+        data-aos="fade-right"
+        data-aos-anchor-placement="top-center"
+        data-aos-easing="linear"
+        data-aos-duration="500"
+      />
+      <img class="games tile" id="tile"
+      onclick="tilemax()"src="SVG/Projects/Games.svg" / data-aos="fade-up"
+      data-aos-anchor-placement="top-center" data-aos-easing="linear"
+      data-aos-duration="800">
     </section>
     <section class="contact">
-      <form onsubmit="sendEmail(); reset(); return false">
+      <iframe
+        src="https://docs.google.com/forms/d/e/1FAIpQLSfF2IyoULNmP_PmZKNeJzIai349SrY_2JLcCcyBKMeCucQPDA/viewform?usp=sf_link"
+        width="640"
+        height="800"
+        frameborder="0"
+        marginheight="0"
+        marginwidth="0"
+        id="google-queryform"
+        >Loading…</iframe
+      >
+      <!-- <form onsubmit="sendEmail(); reset(); return false">
         <input type="text" id="name" placeholder="NAME" required />
         <input type="email" id="email" placeholder="EMAIL" required />
         <textarea
@@ -660,18 +696,25 @@
           placeholder="QUERY"
         ></textarea>
         <button type="submit">Send</button>
-      </form>
+      </form> -->
     </section>
 
     <!-- TRIGGER ANIMATE ON SCROLL -->
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="JS/data-aos.js"></script>
     <script>
       AOS.init();
     </script>
-
-    <!-- ANIMATE ON SCROLL -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/gsap.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/ScrollTrigger.min.js"></script>
-    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/gsap.min.js"
+      integrity="sha512-gmwBmiTVER57N3jYS3LinA9eb8aHrJua5iQD7yqYCKa5x6Jjc7VDVaEA0je0Lu0bP9j7tEjV3+1qUm6loO99Kw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/Flip.min.js"
+      integrity="sha512-byzUdBXaTSrgrlWDvkyU6TBkRSUUiI3EzVIdZtrYEUx1hFnsel9QmEs3QWpKo+8N+G9eOjSxQzFWF1PLq0+WVw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
   </body>
 </html>
